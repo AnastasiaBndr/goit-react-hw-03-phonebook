@@ -61,7 +61,17 @@ export class App extends Component {
         contacts.push({ id: "id-" + idNumb, name: name, number: number });
         const newArr = contacts;
         localStorage.setItem("contacts", JSON.stringify(newArr));
-        this.setState({ contacts: newArr })
+        this.setState({ contacts: newArr });
+
+        var getValue = document.getElementById("name");
+        if (getValue.value !== "") {
+          getValue.value = "";
+        }
+
+        getValue = document.getElementById("tel");
+        if (getValue.value !== "") {
+          getValue.value = "";
+        }
       }
 
     }

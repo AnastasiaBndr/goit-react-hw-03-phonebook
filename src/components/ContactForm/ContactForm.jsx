@@ -6,6 +6,7 @@ const ContactForm = ({ handleChangeName, handleChangeNumber, onClickSubmit }) =>
             <h3>Name</h3>
             <input
                 type="text"
+                id="name"
                 name="name"
                 title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                 required
@@ -16,6 +17,7 @@ const ContactForm = ({ handleChangeName, handleChangeNumber, onClickSubmit }) =>
             <h3>Number</h3>
             <input
                 type="tel"
+                id="tel"
                 name="number"
                 title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                 required
