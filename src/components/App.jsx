@@ -26,9 +26,10 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    if (localStorage.getItem("contacts") !== "")
+    if (localStorage.getItem("contacts") !== null)
       this.setState({ contacts: JSON.parse(localStorage.getItem("contacts")) });
     else return this.state.contacts;
+
   }
 
   handleChangeName = evt => {
