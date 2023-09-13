@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.contact__container {
+  font-family: Caveat;
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid black;
+
+  padding: 40px 170px 40px 40px;
+}
+.main__title {
+}
+.contacts__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
